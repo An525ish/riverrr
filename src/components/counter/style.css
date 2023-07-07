@@ -1,0 +1,71 @@
+.counter{
+    background-color: rgb(57, 45, 68);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.cross{
+    position: absolute;
+    right : .8rem;
+    font-size: .8rem;
+    font-weight: 500;
+    top : .3rem;
+    text-shadow: 0 0 10px black;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color : #b63619d8;
+    }
+}
+
+.add{
+    position: absolute;
+    left : 1rem;
+    top : -2.5rem;
+    font-weight: bold;
+    border : 2px solid #b63619d8;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+ .display{
+    margin: 1rem 0;
+
+    & .label{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+}
+
+
+ .display input{
+    text-align: right;
+    font-size: 45px;
+    flex: 1;
+    background-color: rgba(127, 255, 212, 0.2);
+    box-shadow: none;
+    margin-top: 1rem;
+}
+
+.operators {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    & button {
+        flex-grow: 1;
+    }
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 1rem;
+    & button {
+        width: 10rem;
+    }
+}
